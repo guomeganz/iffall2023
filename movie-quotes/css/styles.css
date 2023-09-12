@@ -1,0 +1,59 @@
+body {
+    background-image: url("https://cdn.myportfolio.com/4e80716921aea9ee65fd41a4f690a253/84d9c7a52ec17aea5791c00c3d5fb635cb791d4f565e211490f3728d370f5bc575561895e22f3665_rw_1200.png?h=d39a3c8796289ab2ea983a9a0c1d351c");
+    /* color: #6AE0CC; */
+    color: white;
+    font-family: "vendetta", serif;
+    font-size: 20px;
+    line-height: 1.07;
+    margin: 0;
+}
+
+div {
+    border: 10px solid none; background: black;
+    background: rgba(0, 0, 0, .9);
+    padding-left: 40px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    margin-left: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    color: black
+}
+ 
+h3 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+h3.One {
+    margin-top: 10px;
+}
+
+img {
+    margin-top: 150px;
+    width: 500px;
+    float: right;
+}
+
+footer {
+    border: 10px solid none; background: black;
+    background: rgba(0, 0, 0, .9);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
