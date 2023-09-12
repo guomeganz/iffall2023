@@ -1,0 +1,57 @@
+body {
+    background-image: url("https://media.tenor.com/AUteKr8hSX0AAAAM/i-said-hey-he-man.gif");
+    text-align: center;
+    font-family: "study", serif;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 50px;
+ }
+
+div {
+    width: 600px;
+    border: 10px solid #30188C; background: black;
+    margin: auto;
+}
+
+p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+h1 {
+    font-family: "mrs-eaves-roman-petite-caps", serif;
+    font-size: 50px;
+    color: #A03561;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: "mrs-eaves-roman-petite-caps", serif;
+    font-size: 20px;
+    color: #968C13;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.gradient {
+    background-image: linear-gradient(#de6449, #d88c28, #c29b2e, #a2986e, #a2789b, #cc606f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first {
+    margin-top: 30px;
+}
+
+footer {
+    color: white;
+    background: rgba(0, 0, 0, .5);
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-top: 120px;
+    bottom: 0%;
+    font-family: "mrs-eaves-roman-petite-caps", serif;
+    font-size: 30px;
+}
