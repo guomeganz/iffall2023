@@ -1,0 +1,98 @@
+html {
+    background-image: url("https://gifdb.com/images/thumbnail/camilo-madrigal-swith-to-bruno-xu65ehhvpt3ybsws.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(98, 164, 77);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+h2 {
+    color: rgb(49, 83, 39);
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+h3 {
+    color: rgb(206, 255, 127); 
+    text-shadow: 0 0 2px white;
+    margin-left: 0px;
+}
+
+div {
+    color: rgb(206, 255, 127); 
+    text-shadow: 0 0 2px white;
+    position: absolute;
+    right: 700px;
+    margin-top: -45px;
+}
+
+article {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+p {
+    text-indent: 1.5rem;
+    line-height: 0.95;
+}
+
+#sub {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#light {
+    font-weight: 300;
+}
+
+#heavy {
+    font-weight: 700;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#close {
+    letter-spacing: -.05em;
+}
+
+#far {
+    letter-spacing: .5em;
+}
+
+#lower {
+    text-transform: lowercase;
+}
+
+#upper {
+    text-transform: uppercase;
+}
+
+#under {
+    text-decoration: underline;
+}
+
+#dotted {
+    text-decoration: underline dotted;
+}
+
+#wavy {
+    text-decoration: wavy underline;
+}
