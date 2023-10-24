@@ -1,0 +1,256 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    color:rgb(199, 57, 57);
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    padding: 10px 0 10px 15px;
+    background-color:rgb(199, 57, 57);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: white;
+}
+
+section {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+}
+
+.intro-info {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 10px 15px 10px 15px;
+}
+
+.intro-image {
+    width: 60%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introduction ul {
+    margin: 0;
+}
+
+.introduction li {
+    display: block;
+}
+
+.prep-list {
+    line-height: 1.4;
+    padding: 0 0 10px 0;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 32px
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.overview {
+    color: rgb(137, 137, 137);
+}
+
+.overview p {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.introduction p {
+    padding-bottom: 20px;
+    padding-right: 46px;
+}
+
+.ingredients {
+    background-color: rgb(211, 211, 211);
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.ingredients ul {
+    padding: 20px 0 20px 28px;
+    margin: 0;
+}
+
+.ingredients li {
+    line-height: 1.5;
+}
+
+.notes {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.notes-content {
+    background-color: rgb(199, 57, 57);
+    box-sizing: border-box;
+    padding: 20px;
+    width: 60%;
+}
+
+.notes h2 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.notes p {
+    padding-bottom: 10px;
+}
+
+.instruction-block {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+.instruction-block li {
+    display: block;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 40px;
+    width: 60%;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+.instruction-block img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.step-2-image img {
+    object-position: top;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(199, 57, 57);
+    height: 80px;
+    color: white;
+}
+
+.end {
+    width: 100%;
+    text-align: left;
+}
+
+.actually-the-credits {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 825px) {
+    header h1 {
+        display: none;
+    }
+    header {
+        height: 70px;
+    }
+}
+
+@media (max-width: 824px) {
+    main h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .instructions {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:640px) {
+    .introduction {
+        flex-direction: column-reverse;
+    }
+
+    .intro-info {
+        width: 100%;
+    }
+
+    .intro-image {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .instructions {
+        padding: 20px;
+    }
+
+    .block {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .notes-content {
+        width: 100%;
+    }
+
+    .instruction-block img {
+        display: block;
+        width: 100%;
+    }
+
+    .block > div {
+        width: 100%;
+    }
+}
