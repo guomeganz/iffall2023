@@ -1,0 +1,404 @@
+/* tucker allen */
+
+a#btn_tuckerallen {
+    display: inline-block;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    color: #354b67;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s;
+    position: relative;
+}
+
+#btn_tuckerallen span {
+    display: block;
+    transform-origin: right center;
+    transition: all .2s;
+}
+
+#btn_tuckerallen img {
+    visibility: hidden;
+    position: absolute;
+    width: 50px;
+    top: 4px;
+    left: 32px;
+    opacity: 0;
+    transition: all .05s;
+}
+
+#btn_tuckerallen:hover img {
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s;
+}
+
+#btn_tuckerallen:hover span {
+    transform: scale(.8);
+}
+
+/* ForeFlight */
+
+a#btn_ForeFlight {
+    display: inline-block;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 0 10px 0;
+    color: #212e39;
+    font-size: 30px;
+    font-family: "gesta", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .5s;
+    position: relative;
+    background-color: #f1f5f8;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+
+a#btn_ForeFlight span {
+    padding: 10px 40px 10px 40px;
+    border: 0px solid white;
+    border-radius: 10px;
+}
+
+a#btn_ForeFlight:hover {
+    background-image: url(../images/gradient.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+a#btn_ForeFlight:hover span {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Missouri Botanical Garden */
+
+a#btn_mbg {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/mo-garden.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-size: 7px;
+    font-family: "transat-text", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .5s;
+    transform-origin: center;
+}
+
+#btn_mbg span {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transform-origin: center;
+    margin-top: 12px;
+    text-align: center;
+}
+
+a#btn_mbg:hover {
+    transform: scale(3);
+}
+
+a#btn_mbg:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* IDEO */
+
+a#btn_IDEO {
+    display: inline-block;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0 40px 0 40px;
+    background-image: url(../images/ideo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    color: black;
+    font-size: 40px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .5s;
+    position: relative;
+}
+
+#btn_IDEO span {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a#btn_IDEO:hover {
+    background-image: none;
+}
+
+a#btn_IDEO:hover span {
+    visibility: visible;
+    opacity: 1;
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+/* combined stack overflow (https://stackoverflow.com/questions/33486228/how-to-reveal-one-letter-at-a-time) and button exercise */
+@keyframes reveal{ 
+    from { width: 0; }
+    to {width: 100%;} 
+} 
+
+
+/* the color run */
+
+a#btn_thecolorrun {
+    display: inline-block;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 92px;
+    padding: 18px 30px 0 30px;
+    background-color: white;
+    border: 2px solid #6dc8e4;
+    color: black;
+    font-size: 40px;
+    font-family: "alternate-gothic-no-2-d", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+a#btn_thecolorrun:hover {
+    background-color: black;
+    border: 2px solid rgb(255, 145, 184);
+    box-shadow: 0 0 7px #ffb60a;
+}
+
+a#btn_thecolorrun:hover span {
+    background-color: black;
+    background-clip: text;
+    background: linear-gradient(to right, #ff91d8 0%,#ffc77a 21%,#ffe882 47%,#b1ff7a 73%,#30c4ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* used https://welearncode.com/rainbow-text/ for gradient text reference */
+
+/* cartoon network */
+
+a#btn_CN {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 82px;
+    padding: 28px 0 0 0;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    font-family: "hwt-konop-6-line", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    transform-origin: center;
+}
+
+a#btn_CN:hover {
+    background-color: black;
+    color: white;
+    animation: color-change 6s infinite, wiggle 2s infinite;
+}
+
+@keyframes color-change {
+    from { color: magenta; }
+    33% { color: cyan; }
+    66% { color: yellow; }
+    to { color: magenta; }
+}
+
+@keyframes wiggle {
+    from { transform: rotate(0deg); }
+    20% { transform: rotate(0deg); }
+    30% { transform: rotate(-3deg); }
+    40% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    60% { transform: rotate(3deg); }
+    70% { transform: rotate(0deg); }
+    to { transform: rotate(0deg); }
+}
+
+/* Pottermore */
+
+a#btn_pottermore {
+    display: inline-block;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 18px 30px 0 30px;
+    /* background-image: url(../images/stars.gif);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    color: rgb(223, 167, 0);
+    font-size: 18px;
+    font-family: "etna", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.5s;
+    position: relative;
+}
+
+a#btn_pottermore::before {
+    background: url(../images/stars.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0px solid white;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+a#btn_pottermore:hover::before {
+    opacity: 0;
+}
+
+a#btn_pottermore span {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s;
+    transform-origin: center;
+}
+
+a#btn_pottermore:hover span {
+    visibility: visible;
+    opacity: 100%;
+    transform: scale(1.5);
+}
+
+/* referenced stack overflow for opacity on background image: https://stackoverflow.com/questions/41152161/opacity-animation-for-background-image */
+
+/* Pastaria Deli & Wine */
+
+a#btn_pdw {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0px 40px 0 40px;
+    color: black;
+    font-size: 40px;
+    line-height: 1;
+    font-family: "alternate-gothic-no-2-d", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .5s;
+    transform-origin: top center;
+}
+
+a#btn_pdw p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: all .5s;
+}
+
+a#btn_pdw #deli {
+    transform-origin: top center;
+}
+
+a#btn_pdw #pastaria {
+    transform-origin: bottom center;
+}
+
+a#btn_pdw:hover {
+    transform: translate(0, -8px);
+}
+
+a#btn_pdw:hover #deli {
+    transform: scale(1.3);
+    animation: alt 1s infinite alternate;
+}
+
+a#btn_pdw:hover #pastaria {
+    transform: scale(.9);
+}
+
+@keyframes alt {
+    from { color: #0e92a0; }
+    49% { color: #0e92a0; }
+    50% { color: #f04924; }
+    to { color: #f04924; }
+}
+
+/* Old Navy */
+
+a#btn_oldnavy {
+    display: inline-block;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 97px;
+    padding: 13px 40px 0 40px;
+    background-color: rgb(0, 55, 100);
+    border: 3px solid white;
+    color: #fff;
+    font-size: 28px;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a#btn_oldnavy:hover {
+    background-color: white;
+    border: 3px solid #fd4d33;
+    color: #fd4d33;
+}
+
+/* Michael Kors */
+
+a#btn_michaelkors {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 20px 0 20px;
+    color: black;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a#btn_michaelkors:hover {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
