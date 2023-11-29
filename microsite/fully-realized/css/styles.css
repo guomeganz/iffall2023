@@ -1,0 +1,360 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* clearing out the margin and padding default for paragraphs */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* clearing out default settings for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* setting styles for the header banner */
+header {
+    background-color: #EDEDED;
+    color: #9B9B9B;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 120px;
+}
+
+/* styles for the header ul */
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 130px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* styles for the li elements of the header ul */
+.nav li {
+    display: block;
+}
+
+header a {
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #EDEDED;
+    transition: all 0.3s;
+}
+
+header a:hover {
+    border-bottom: 2px solid #9B9B9B;
+}
+
+#current-page {
+    color: #FF4646;
+}
+
+#current-page a:hover {
+    border-bottom: 2px solid #FF4646;
+}
+
+/* this controls the first section with the little black dress quote */
+.landing-screen {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+/* this deals with the placement of the little black dress quote */
+h1 {
+    margin: 0;
+    padding-top: 340px;
+}
+
+/* this sets up a guide in preparation for alignment of items in the actual css */
+#home-guide {
+    position: absolute;
+    width: 1440px;
+    z-index: -100;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 25%;
+}
+
+.intro-column {
+    padding-top: 41.1%;
+    padding-left: 16.9%;
+    width: 30.8%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 50px;
+    padding-bottom: 10.6%;
+}
+
+.intro-column p {
+    font-size: 20px;
+    line-height: 1.55rem;
+}
+
+#right-name-link {
+    padding-top: 28.3%;
+    padding-left: 16.9%;
+}
+
+#right-look-link {
+    padding-top: 31.3%;
+    padding-left: 65.7%;
+}
+
+#right-brand-link {
+    padding-top: 29.3%;
+    padding-left: 36.1%;
+}
+
+#right-species-link {
+    padding-top: 20.8%;
+    padding-left: 73%;
+}
+  
+h3 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* this defines the background image (letters) */
+/* currently, this composition begins to crumple at 1000px width */
+.image-bg {
+    width: 100%;
+    height: 3233px;
+    background-image: url(../images/home-bg.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 390px;
+}
+
+.image-bg a {
+    font-size: 32px;
+}
+
+/* the following rulesets define the style of the information bodies in home */
+section {
+    font-size: 24px;
+    padding-left: 150px;
+    width: 50%;
+    margin-bottom: 529px;
+}
+
+.body-text {
+    width: 100%;
+    border-right: 5px solid #C3C3C3;
+    padding-right: 20%;
+}
+
+h4 {
+    font-size: 36px;
+    color: #FF4646;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+section p {
+    padding-bottom: 24px;
+}
+
+.image-bg a {
+    transition: all 0.3s;
+}
+
+.image-bg a:hover {
+    color: #FF4646;
+}
+
+/* here start the styles for the footer */
+footer {
+    background-color: #EDEDED;
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 36px;
+    padding-top: 250px;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+.links p {
+    padding-bottom: 40px;
+}
+
+.footer-content {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-bottom: 150px;
+}
+
+.copyright {
+    width: 40%;
+}
+
+.copyright p {
+    padding-bottom: 40px;
+}
+
+/* here begin the rules for the usage page */
+.page {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    margin: 0;
+}
+
+.image-grid {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 500px;
+}
+
+.grid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid li {
+    width: 32%;
+    display: block;
+    margin: 0;
+}
+
+.image-grid img {
+    width: 100%;
+}
+
+.not-last {
+    padding-bottom: 50px;
+}
+
+/* this is css dealing with the display image */
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    width: 60%;
+    margin: auto;
+}
+
+.display-image {
+    background-color: #484848;
+}
+
+.display-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.display-info {
+    padding-bottom: 200px;
+}
+
+.arrow {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* history */
+.history-banner h3 {
+    padding-bottom: 60px;
+}
+
+.timeline {
+    width: 100%;
+    height: 8526px;
+    background-image: url(../images/history-bg.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.history-list {
+    padding: 0;
+}
+
+.history-list li {
+    display: block;
+    width: 35%;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 300px;
+}
+
+.history-list p {
+    font-size: 20px;
+    margin-bottom: 24px;
+    line-height: 2rem;
+    color: white;
+}
+
+.history-list h6 {
+    font-size: 82px;
+    color: #FF4646;
+    margin: 0;
+    padding-bottom: 36px;
+    padding-top: 100px;
+}
+
+.history-list img {
+    max-width: 100%;
+}
+
+/* sources */
+
+.sources {
+    font-size: 20px;
+}
+
+.sources a {
+    transition: all 0.3s;
+}
+
+.sources a:hover {
+    color: #FF4646;
+}
+
+#remove-later {
+    line-height: 12rem;
+    font-size: 2.3rem;
+}
+
+/* variations */
+
+.variations-banner h3 {
+    padding-bottom: 80px;
+    color: white;
+}
+
+.var-bg-color {
+    background-color: #333333;
+}
+
+.variation-image {
+    margin: 0;
+    padding-bottom: 529px;
+}
