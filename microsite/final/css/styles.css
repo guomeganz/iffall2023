@@ -35,7 +35,6 @@ header {
     margin: 0;
     padding: 0;
     width: 30%;
-    height: 130px;
     float: right;
     display: flex;
     justify-content: space-between;
@@ -210,94 +209,218 @@ h5 {
 }
 
 /* here begin the rules for the usage page */
-/* .page {
-    padding-top: 150px;
-    padding-bottom: 120px;
-    margin: 0;
+
+.usage-banner {
+    padding-bottom: 70px;
 }
 
-.image-grid {
-    width: 60%;
-    margin: auto;
-    padding-bottom: 500px;
-}
-
-.grid {
+.usage-list {
     margin: 0;
     padding: 0;
+}
+
+.usage-list li {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.grid li {
-    width: 32%;
-    display: block;
+.left-aligned .usage-content {
+    padding-left: 12vw;
+}
+
+.right-aligned .usage-content {
+    padding-right: 12vw;
+}
+
+.large img {
+    padding-bottom: 30px;
+}
+
+/* small styles */
+.small img {
+    width: 400px;
+}
+
+.small {
+    width: 70%;
+    margin-left: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.small h6 {
+    color: #FF4646;
+    font-size: 20px;
     margin: 0;
+    padding-bottom: 20px;
 }
 
-.image-grid img {
-    width: 100%;
+.usage-info {
+    width: 40%;
+    padding-left: 10%;
 }
 
-.not-last {
-    padding-bottom: 50px;
-} */
+/* oral-b style */
 
-/* this is css dealing with the display image */
+.oral-b {
+    padding-bottom: 180px;
+}
 
-/* .display {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 80px;
+/* target style */
+
+.target {
+    padding-top: 50px;
+}
+
+.target img {
+    width: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* bmw style */
+
+.bmw {
+    padding-top: 50px;
+}
+
+.bmw img {
+    width: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* american apparel styles */
+
+.american-apparel .usage-content {
+    background-color: #D9D9D9;
+    width: 50%;
+}
+
+.american-apparel .usage-image {
+    width: 50%;
+}
+ 
+.american-apparel .usage-image {
+    background-image: url(../images/american-apparel-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.american-apparel .large img {
+    width: 40%;
+}
+
+.american-apparel .large p {
     width: 60%;
-    margin: auto;
 }
 
-.display-image {
-    background-color: #484848;
+/* knoll styles */
+
+.knoll .usage-content {
+    background-color: #D9D9D9;
+    width: 30%;
 }
 
-.display-image img {
-    width: 100%;
-    object-fit: cover;
+.knoll .usage-image {
+    width: 70%;
+}
+ 
+.knoll .usage-image {
+    background-image: url(../images/knoll-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
-.display-info {
-    padding-bottom: 200px;
+.knoll .large img {
+    width: 30%;
 }
 
-.arrow {
-    padding-left: 40px;
-    padding-right: 40px;
-} */
+.knoll .large p {
+    width: 80%;
+    float: right;
+}
+
+/* panasonic styles */
+
+.panasonic .usage-content {
+    background-color: #D9D9D9;
+    width: 40%;
+}
+
+.panasonic .usage-image {
+    width: 60%;
+}
+ 
+.panasonic .usage-image {
+    background-image: url(../images/panasonic-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panasonic .large img {
+    width: 40%;
+}
+
+.panasonic .large p {
+    width: 70%;
+}
+
+/* toyota styles */
+
+.toyota .usage-content {
+    background-color: #D9D9D9;
+    width: 30%;
+}
+
+.toyota .usage-image {
+    width: 70%;
+}
+ 
+.toyota .usage-image {
+    background-image: url(../images/toyota-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.toyota .large img {
+    width: 50%;
+}
+
+.toyota .large p {
+    width: 80%;
+    float: right;
+}
 
 /* history */
 
 .history {
     background-image: url(../images/history-lineless-bg.png);
-    /* object-fit: cover; */
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* note: the following code is adapted from w3 schools: https://www.w3schools.com/howto/howto_css_timeline.asp */
 
 .history * {
     box-sizing: border-box;
 }
 
 .history-banner h3 {
-    padding-bottom: 60px;
+    color: white;
 }
 
-/* .timeline {
-    box-sizing: border-box;
+.timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .timeline::after {
-    box-sizing: border-box;
     content: '';
     position: absolute;
     width: 6px;
@@ -309,116 +432,58 @@ h5 {
 }
 
 .entry {
-    box-sizing: border-box;
-    position: relative;
-    width: 45%;
-    padding: 10px 40px;
-}
-
-.entry::after {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: #EDEDED;
-    border: 4px solid orange;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.entry img {
-    max-width: 100%;
-}
-
-.entry p {
-    font-size: 18px;
-    margin-bottom: 24px;
-    line-height: 2rem;
-    color: white;
-}
-
-.entry h6 {
-    font-size: 64px;
-    color: #FF4646;
-    margin: 0;
-    padding-bottom: 36px;
-    padding-top: 100px;
-} */
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #EDEDED;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-    padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
+    padding-bottom: 180px;
 }
 
-/* The circles on the timeline */
-.container::after {
+.entry::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -13px;
+    width: 30px;
+    height: 30px;
+    right: -15px;
     background-color: #EDEDED;
-    top: 15px;
+    top: 40px;
     border-radius: 50%;
     z-index: 1;
 }
 
-/* Place the container to the left */
+.to-adjust::after {
+    top: 90px;
+}
+
 .left {
     left: 0;
+    padding-left: 12%;
+    padding-right: 5%;
 }
 
-/* Place the container to the right */
 .right {
     left: 50%;
+    padding-right: 12%;
+    padding-left: 5%;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
-    left: -12px;
+    left: -15px;
 }
 
-/* The actual content */
-.content {
+.history-content {
     color: white;
-    padding: 20px 30px;
     position: relative;
     border-radius: 6px;
 }
 
-.content p {
+.history-content p {
     font-size: 18px;
     margin-bottom: 24px;
     line-height: 2rem;
     color: white;
 }
 
-.content h6 {
+.history-content h6 {
     font-size: 64px;
     color: #FF4646;
     margin: 0;
@@ -426,7 +491,7 @@ h5 {
     padding-top: 72px;
 }
 
-.content img {
+.history-content img {
     width: 100%;
 }
 
@@ -459,7 +524,7 @@ h5 {
 /* this messes with the indentation for pages */
 .pages {
     padding-left: 0;
-    margin-left: 12%;
+    margin-left: 12vw;
     padding-top: 80px;
     padding-bottom: 160px;
     font-size: 48px;
@@ -491,6 +556,11 @@ h5 {
         padding-bottom: 75px;
     }
 
+    .home p {
+        line-height: 1.4rem;
+        padding-bottom: 32px;
+    }
+
     .home-info-column {
         width: 80%;
         padding-left: 12%;
@@ -511,6 +581,24 @@ h5 {
 
     .copyright {
         padding-bottom: 30px;
+    }
+
+    /* history media query adapted from w3 schools */
+    .timeline::after {
+        left: 8vh;
+    }
+
+    .entry {
+        width: 90%;
+        padding-left: 140px;
+    }
+
+    .left::after, .right::after {
+        left: 6.4vh;
+    }
+
+    .right {
+        left: 0%;
     }
 }
 
@@ -557,7 +645,11 @@ h5 {
         font-size: 20px;
         padding-left: 12%;
         width: 40%;
-        line-height: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .home-info-column p {
+        padding-bottom: 32px;
     }
 
     .home img {
@@ -596,5 +688,248 @@ h5 {
 
     .variation-alt {
         display: none;
+    }
+}
+
+@media(max-width: 450px) {
+    .timeline::after {
+        display: none;
+    }
+
+    .entry::after {
+        display: none;
+    }
+
+    .entry {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+    }
+}
+
+/* usage responsiveness */
+@media(max-width: 650px) {
+
+    .usage-list li {
+        display: block;
+        width: 90%;
+        padding-bottom: 100px;
+    }
+
+    .usage-image {
+        display: none;
+    }
+
+    .usage-list {
+        background-color: #D9D9D9;
+    }
+
+    .usage-info h6 {
+        display: none;
+    }
+
+    .usage-content {
+        display: block;
+    }
+
+    .usage-list img {
+        width: 80%;
+    }
+
+    .small {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .small img {
+        padding-bottom: 30px;
+    }
+    
+    .usage-info {
+        padding: 0;
+        width: 100%;
+    }
+
+    .american-apparel .large img {
+        width: 100%;
+    }
+
+    .knoll .large img {
+        width: 100%;
+    }
+
+    .panasonic .large img {
+        width: 100%;
+    }
+
+    .toyota .large img {
+        width: 80%;
+    }
+
+    /* american apparel */
+    .american-apparel .large p {
+        width: 80%;
+        float: none;
+        text-align: left;
+    }
+
+    .american-apparel .usage-content {
+        width: 100%;
+    }
+
+    /* knoll */
+    .knoll .large p {
+        width: 80%;
+        float: none;
+    }
+
+    .knoll .usage-content {
+        width: 100%;
+    }
+
+    /* panasonic */
+    .panasonic .large p {
+        width: 80%;
+    }
+
+    .panasonic .usage-content {
+        width: 100%;
+    }
+
+    /* toyota */
+    .toyota .large p {
+        width: 80%;
+        float: none;
+        text-align: left;
+    }
+
+    .toyota .usage-content {
+        width: 100%;
+    }
+
+    .large {
+        margin-left: 8vw;
+    }
+
+    .usage-list p {
+        width: 80%;
+    }
+
+    .left-aligned .usage-content {
+        padding: 0;
+    }
+
+    .target img {
+        padding: 0;
+        padding-bottom: 30px;
+        width: 50%;
+    }
+
+    .bmw img {
+        padding: 0;
+        padding-bottom: 30px;
+        width: 50%;
+    }
+
+    /* adjusting padding */
+    .oral-b {
+        padding-bottom: 0;
+    }
+
+    #half-logo {
+        display: none;
+    }
+
+    #full-logo {
+        display: block;
+    }
+
+    .target {
+        padding-top: 0;
+    }
+
+    .bmw {
+        padding-top: 0;
+    }
+
+    .american-apparel {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 651px) {
+    .american-apparel {
+        flex-direction: row-reverse;
+        height: 550px;
+    }
+
+    .knoll {
+        text-align: right;
+        height: 550px;
+    }
+
+    .panasonic {
+        flex-direction: row-reverse;
+        height: 550px;
+        padding-bottom: 250px;
+    }
+
+    .toyota {
+        text-align: right;
+        height: 550px;
+        padding-bottom: 250px;
+    }
+
+    #full-logo {
+        display: none;
+    }
+
+    #half-logo {
+        display: block;
+    }
+
+    /* lufthansa style */
+    .lufthansa {
+        padding-top: 100px;
+        padding-bottom: 250px;
+    }
+
+    .large {
+        padding-top: 120px;
+    }
+}
+
+@media(max-width: 900px) {
+    .nav {
+        width: 60%;
+    }
+}
+
+@media(max-width: 600px) {
+    header p {
+        width: 100%;
+    }
+
+    header {
+        display: block;
+        padding-top: 70px;
+    }
+
+    .nav {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: block;
+        float: none;
+    }
+
+    .nav p {
+        padding-bottom: 10px;
+    }
+}
+
+@media(min-width: 601px) {
+    .nav {
+        height: 130px;
     }
 }
