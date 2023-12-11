@@ -161,6 +161,10 @@ footer {
     font-size: 20px;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 h5 {
     font-size: 36px;
     padding-top: 120px;
@@ -886,7 +890,7 @@ h5 {
     }
 
     #half-logo {
-        display: block;
+        display: inline-block;
     }
 
     /* lufthansa style */
